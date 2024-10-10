@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7ce3647ce6cc9c30f9f0711489246109 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7ce3647ce6cc9c30f9f0711489246109" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7ce3647ce6cc9c30f9f0711489246109 = L.map(
+                "map_7ce3647ce6cc9c30f9f0711489246109",
+                {
+                    center: [46.2276, 2.2137],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b4dce42cbb47a3787b1d67d98ddf1b6d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b4dce42cbb47a3787b1d67d98ddf1b6d.addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+            var circle_marker_5b45e8211b3475180605cc75cd3b834f = L.circleMarker(
+                [47.484775714, 1.68439107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1321059, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_9ee4a143d672851c475eed2e4a322dc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a70d08ff2cd2dfae7b102b25d854fe6 = $(`<div id="html_6a70d08ff2cd2dfae7b102b25d854fe6" style="width: 100.0%; height: 100.0%;">Centre-Val de Loire: 11.32 GWh</div>`)[0];
+                popup_9ee4a143d672851c475eed2e4a322dc0.setContent(html_6a70d08ff2cd2dfae7b102b25d854fe6);
+            
+        
+
+        circle_marker_5b45e8211b3475180605cc75cd3b834f.bindPopup(popup_9ee4a143d672851c475eed2e4a322dc0)
+        ;
+
+        
+    
+    
+            var circle_marker_af3f347d53dacbb473680765f03eb719 = L.circleMarker(
+                [45.514642251, 4.536120089],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.613207245773502, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_96f4cbb1a51b9883db9bb785ef692e9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef995931d00b55f57bca40e253465f55 = $(`<div id="html_ef995931d00b55f57bca40e253465f55" style="width: 100.0%; height: 100.0%;">Auvergne-Rhône-Alpes: 196.13 GWh</div>`)[0];
+                popup_96f4cbb1a51b9883db9bb785ef692e9b.setContent(html_ef995931d00b55f57bca40e253465f55);
+            
+        
+
+        circle_marker_af3f347d53dacbb473680765f03eb719.bindPopup(popup_96f4cbb1a51b9883db9bb785ef692e9b)
+        ;
+
+        
+    
+    
+            var circle_marker_9d66ec74cb6b24f83f9e5a18cf3dc345 = L.circleMarker(
+                [49.120068073, 0.110921062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9057795023619994, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_be67fb169076b6780637bf8c564c83c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca579470126e83442599d975415e6db5 = $(`<div id="html_ca579470126e83442599d975415e6db5" style="width: 100.0%; height: 100.0%;">Normandie: 19.06 GWh</div>`)[0];
+                popup_be67fb169076b6780637bf8c564c83c5.setContent(html_ca579470126e83442599d975415e6db5);
+            
+        
+
+        circle_marker_9d66ec74cb6b24f83f9e5a18cf3dc345.bindPopup(popup_be67fb169076b6780637bf8c564c83c5)
+        ;
+
+        
+    
+    
+            var circle_marker_3010be59f3ed571d8bcec39e25058c6d = L.circleMarker(
+                [48.688976811, 5.613113195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.487213178893999, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_0851b24e4527a7849476eba82f6bfc13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_975b823994bc8b814dfacd6fd3bf6d72 = $(`<div id="html_975b823994bc8b814dfacd6fd3bf6d72" style="width: 100.0%; height: 100.0%;">Grand Est: 114.87 GWh</div>`)[0];
+                popup_0851b24e4527a7849476eba82f6bfc13.setContent(html_975b823994bc8b814dfacd6fd3bf6d72);
+            
+        
+
+        circle_marker_3010be59f3ed571d8bcec39e25058c6d.bindPopup(popup_0851b24e4527a7849476eba82f6bfc13)
+        ;
+
+        
+    
+    
+            var circle_marker_6cf7ae24ffa937b1e246b23f0947ebba = L.circleMarker(
+                [48.7093154, 2.503402421],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47.127693663389735, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_081b866c84124273ac149840695ea840 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c007162cb5abf27d5d5065ffad2b28e1 = $(`<div id="html_c007162cb5abf27d5d5065ffad2b28e1" style="width: 100.0%; height: 100.0%;">Île-de-France: 471.28 GWh</div>`)[0];
+                popup_081b866c84124273ac149840695ea840.setContent(html_c007162cb5abf27d5d5065ffad2b28e1);
+            
+        
+
+        circle_marker_6cf7ae24ffa937b1e246b23f0947ebba.bindPopup(popup_081b866c84124273ac149840695ea840)
+        ;
+
+        
+    
+    
+            var circle_marker_bb93e3260252ed95678aa7a4a5f4525b = L.circleMarker(
+                [45.206040306, 0.21271768],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.946885719599004, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_304bf01ac2ca31e51bd27c75a84e822d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e828c9030b20eb364e66cc2ced6f825 = $(`<div id="html_4e828c9030b20eb364e66cc2ced6f825" style="width: 100.0%; height: 100.0%;">Nouvelle-Aquitaine: 159.47 GWh</div>`)[0];
+                popup_304bf01ac2ca31e51bd27c75a84e822d.setContent(html_4e828c9030b20eb364e66cc2ced6f825);
+            
+        
+
+        circle_marker_bb93e3260252ed95678aa7a4a5f4525b.bindPopup(popup_304bf01ac2ca31e51bd27c75a84e822d)
+        ;
+
+        
+    
+    
+            var circle_marker_1fe52c0f5c4a9c036c3dd8be9366465b = L.circleMarker(
+                [47.478103854, -0.816788614],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.561274335650001, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_9e97f4656dbedc0404d267e7e5bb7081 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e25a84f69434487b46fade5ad1a7dc14 = $(`<div id="html_e25a84f69434487b46fade5ad1a7dc14" style="width: 100.0%; height: 100.0%;">Pays de la Loire: 155.61 GWh</div>`)[0];
+                popup_9e97f4656dbedc0404d267e7e5bb7081.setContent(html_e25a84f69434487b46fade5ad1a7dc14);
+            
+        
+
+        circle_marker_1fe52c0f5c4a9c036c3dd8be9366465b.bindPopup(popup_9e97f4656dbedc0404d267e7e5bb7081)
+        ;
+
+        
+    
+    
+            var circle_marker_c58c27d7519dc8ec9d5d363527656542 = L.circleMarker(
+                [47.234282007, 4.80685684],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9621100717055002, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_619f469d12f991ab06dffa5ed47b7b22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0313fee172a55bc1eb3e7eaba3c0af9 = $(`<div id="html_a0313fee172a55bc1eb3e7eaba3c0af9" style="width: 100.0%; height: 100.0%;">Bourgogne-Franche-Comté: 29.62 GWh</div>`)[0];
+                popup_619f469d12f991ab06dffa5ed47b7b22.setContent(html_a0313fee172a55bc1eb3e7eaba3c0af9);
+            
+        
+
+        circle_marker_c58c27d7519dc8ec9d5d363527656542.bindPopup(popup_619f469d12f991ab06dffa5ed47b7b22)
+        ;
+
+        
+    
+    
+            var circle_marker_eac64f9be46132242c20f1217a65bd74 = L.circleMarker(
+                [48.177553833, -2.841491226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.041362541341, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_6d28902dcf522b3e8a979358dd4cdf6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df9ba617b78bb47b53605907d5cf1b31 = $(`<div id="html_df9ba617b78bb47b53605907d5cf1b31" style="width: 100.0%; height: 100.0%;">Bretagne: 50.41 GWh</div>`)[0];
+                popup_6d28902dcf522b3e8a979358dd4cdf6b.setContent(html_df9ba617b78bb47b53605907d5cf1b31);
+            
+        
+
+        circle_marker_eac64f9be46132242c20f1217a65bd74.bindPopup(popup_6d28902dcf522b3e8a979358dd4cdf6b)
+        ;
+
+        
+    
+    
+            var circle_marker_4e02612ea0d885071b2281db70cb7f82 = L.circleMarker(
+                [49.969594242, 2.771302607],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.34094652237203, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_d1fe241f410959a058b1557695140bd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c4d6cfe203a3cfbb9878c8a467c4535 = $(`<div id="html_0c4d6cfe203a3cfbb9878c8a467c4535" style="width: 100.0%; height: 100.0%;">Hauts-de-France: 233.41 GWh</div>`)[0];
+                popup_d1fe241f410959a058b1557695140bd6.setContent(html_0c4d6cfe203a3cfbb9878c8a467c4535);
+            
+        
+
+        circle_marker_4e02612ea0d885071b2281db70cb7f82.bindPopup(popup_d1fe241f410959a058b1557695140bd6)
+        ;
+
+        
+    
+    
+            var circle_marker_95fc4567165cb99b9243caf64d3de153 = L.circleMarker(
+                [43.702499298, 2.143926552],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.272658508300001, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_71ff42ff9c89423b738046fa450bce93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f291a068079d13f939bea38ef3506a4c = $(`<div id="html_f291a068079d13f939bea38ef3506a4c" style="width: 100.0%; height: 100.0%;">Occitanie: 152.73 GWh</div>`)[0];
+                popup_71ff42ff9c89423b738046fa450bce93.setContent(html_f291a068079d13f939bea38ef3506a4c);
+            
+        
+
+        circle_marker_95fc4567165cb99b9243caf64d3de153.bindPopup(popup_71ff42ff9c89423b738046fa450bce93)
+        ;
+
+        
+    
+    
+            var circle_marker_86ad42fc6a46e48a5c619892052b054e = L.circleMarker(
+                [43.958770072, 6.061003389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.321209634772376, "stroke": true, "weight": 3}
+            ).addTo(map_7ce3647ce6cc9c30f9f0711489246109);
+        
+    
+        var popup_99128d9d97703b1cf44141399ae04fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33cd7f761a19e62c8e7227554e97bf77 = $(`<div id="html_33cd7f761a19e62c8e7227554e97bf77" style="width: 100.0%; height: 100.0%;">Provence-Alpes-Côte d'Azur: 43.21 GWh</div>`)[0];
+                popup_99128d9d97703b1cf44141399ae04fb1.setContent(html_33cd7f761a19e62c8e7227554e97bf77);
+            
+        
+
+        circle_marker_86ad42fc6a46e48a5c619892052b054e.bindPopup(popup_99128d9d97703b1cf44141399ae04fb1)
+        ;
+
+        
+    
+</script>
+</html>
