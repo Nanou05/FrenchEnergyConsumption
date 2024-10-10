@@ -13,7 +13,9 @@ This project analyzes gas consumption data across different regions of France fr
 - Visualization of consumption patterns over time
 - Growth rate analysis
 - Time Series Analysis
-- GeoData visualization
+- Geographical analysis using centroid data
+- Spatial relationship analysis between regions
+- Nearest neighbor analysis to explore spatial relationships in consumption
 
 ## Requirements
 
@@ -21,6 +23,9 @@ This project analyzes gas consumption data across different regions of France fr
 - pandas
 - matplotlib
 - seaborn
+- geopandas
+- folium
+- scikit-learn
 
 ## Installation
 
@@ -41,7 +46,11 @@ pip install -r requirements.txt
 
 2. Run the analysis script:
 ```
-data_analysis.ipynb
+Data_Analysis.ipynb
+```
+3. Run the spatial analysis script:
+```
+Spatial_Data_Analysis.ipynb
 ```
 
 ## Data Structure
@@ -62,6 +71,21 @@ The script generates:
 - Line plot of gas consumption by region over time
 - Heatmap of consumption by region and year
 - Bar plot of average growth rates by region
+- An interactive map of energy consumption for 2019
+- An interactive map of energy consumption for 2020
+- Scatter plot of region consumption vs average neighbor consumption
+- Time series plots for each region's consumption
+
+  ## Spatial Relationship Analysis
+
+The scatter plot of "Region Consumption vs Average Neighbor Consumption" reveals:
+- Strong positive correlation between a region's consumption and its neighbors'
+- Distinct clustering of regions based on consumption patterns
+- Presence of outliers with high consumption
+- Concentration of regions in lower consumption ranges
+- Potential regional effects on consumption patterns
+
+This analysis suggests that energy consumption tends to be similar among neighboring regions, possibly due to shared geographical, economic, or climatic factors.
 
 ## Contributing
 
